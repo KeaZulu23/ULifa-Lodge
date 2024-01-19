@@ -102,7 +102,7 @@ body {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Longhai Regular", sans-serif;
 }
 
 nav {
@@ -166,11 +166,12 @@ nav {
 
 .header {
   padding-block: 5rem;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(15, 26, 44, 0.5),
       rgba(15, 26, 44, 0.5)
     ),
-    url("https://lh3.googleusercontent.com/p/AF1QipNerquEyKQsoOIN2533C9VpFn9uAxEUs-T7nSvM=s680-w680-h510");
+    url(""); */
+  background-color: white;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -247,7 +248,7 @@ nav {
 }
 
 .about__container {
-  display: grid;
+  
   gap: 4rem 2rem;
 }
 

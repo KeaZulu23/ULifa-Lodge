@@ -7,6 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/home_styles.css" />
     <title>Ulifa Lodge & Wedding Venue - Official Website</title>
@@ -15,9 +16,11 @@
     <nav>
       <div class="nav__bar">
         <div class="nav__header">
-          <div class="logo nav__logo">
-            <img class="nav__logo" src="assets/Ulifa Logo.png"></img>
-          </div>
+          <a href="index.html">
+            <div class="logo nav__logo">
+              <img class="nav__logo" src="assets/Ulifa Logo.png"></img>
+            </div>
+          </a>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
           </div>
@@ -35,11 +38,21 @@
     </nav>
 
     <header class="header" id="home">
-      <div class="section__container header__container">
-        <!-- <p class="section__subheader">ABOUT US</p> -->
-        <h1>Ulifa Lodge: A Beacon of Elegance and Hospitality</h1>
-        <button class="btn">View More</button>
-      </div>
+      <div class="w-full px-6">
+        <div class="mt-8 relative rounded-lg container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64" style="background-color: orange;">
+           <img class="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0"  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg2.svg" alt="bg"/>
+           <img class="ml-2 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg3.svg" alt="bg"/>
+           
+            <div class="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
+                <h1 style="font-family: Longhai Regular;" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">An Accommodation, Conference Functions and Wedding Venue.</h1>
+            </div>
+        </div>
+        <div class="container mx-auto flex justify-center md:-mt-56 -mt-20 sm:-mt-40">
+            <div class="relative sm:w-2/3 w-11/12">
+                <img src="assets/POOL AREA.jpg" alt="Sample Page" role="img"  />
+            </div>
+        </div>
+    </div>
     </header>
 
     <!-- <section class="booking">
@@ -62,11 +75,11 @@
       </div>
     </section> -->
 
-    <section class="about" id="about">
+    
       <div class="section__container about__container">
         <div class="about__grid">
           <div class="about__image">
-            <img src="assets/accom1.jpg" alt="about" />
+            <img src="assets/Westville Images/hero.jpg" alt="about" />
           </div>
           <div class="about__card">
             <span><i class="ri-user-line"></i></span>
@@ -84,7 +97,7 @@
             <p>At Ulifa Lodge, we envision crafting exceptional moments and everlasting memories. We strive to be the epitome of hospitality, setting new standards in service, comfort, and sustainability.</p>
           </div>
         </div>
-        <div class="about__content">
+        <!-- <div class="about__content">
           <h2 class="section__header">Core Values</h2>
           <p class="section__description">
             <b>Excellence:</b> We are dedicated to excellence in every aspect of our operations, from guest services to accommodation, dining, and event hosting. Attention to detail is our hallmark. <br><br>
@@ -96,25 +109,24 @@
             <b>Sustainability:</b> We are committed to responsible tourism. Ulifa Lodge integrates eco-friendly practices, such as solar power systems, into our operations to minimize our environmental footprint. <br><br>
           </p>
           <button class="btn">Book Now</button>
-        </div>
+        </div> -->
       </div>
-    </section>
 
     <section class="room__container" id="room">
       <!-- <p class="section__subheader">ROOMS</p> -->
-      <h2 class="section__header">The Ulifa Experience</h2>
+      <h2 class="section__header">Our Amazing Ulifa Lodge Experience </h2>
       <div class="room__grid">
         <div class="room__card">
-          <img src="assets/bedroom1.png" alt="room" />
+          <img src="assets/Westville Images/bedroom.jpg" alt="room" />
           <div class="room__card__details">
             <div>
-              <h4>Luxurious Comfort</h4>
+              <h4>Our Luxurious Spacious Rooms</h4>
               <p>Our lodges are designed with an eye for luxury, featuring well-appointed rooms, modern amenities, and elegant decor that reflects the essence of comfort.</p>
             </div>
           </div>
         </div>
         <div class="room__card">
-          <img src="assets/eshowe hall.png" alt="room" style="height: 390px;"/>
+          <img src="assets/Eshowe Images/eshowe5.jpg" alt="room"  style="height: 313px;"/>
           <div class="room__card__details">
             <div>
               <h4>Versatile Venues</h4>
@@ -123,7 +135,7 @@
           </div>
         </div>
         <div class="room__card">
-          <img src="assets/Spa 1.jpg" alt="room" style="height: 390px;"/>
+          <img src="assets/Eshowe Images/Spa Reception pic 1.jpg" style="height: 313px;" alt="room"/>
           <div class="room__card__details">
             <div>
               <h4>Spa Retreats</h4>
@@ -134,12 +146,13 @@
           </div>
         </div>
         <div class="room__card">
-          <img src="assets/Westville Images/Image11.jpg" alt="room" style="height: 390px;"/>
+          <img src="assets/Westville Images/bedroom2.jpg" alt="room"/>
           <div class="room__card__details">
             <div>
-              <h4>Culinary Delights</h4>
-              <p>
-                Indulge in a culinary journey with our delectable offerings. From hearty breakfasts to gourmet dinners, our dining experiences are crafted to tantalize the taste buds.
+              <h4>Comfortable Accommodations</h4>
+              <button onclick="toggleDescription()" id="toggleButton" style="padding: auto;">Read More:</button>
+              <p id="roomDescription" style="display: none;">
+                All our 19 rooms are fully air-conditioned, equipped with smart TVs, complimentary tea and coffee, hotel-quality linen, workstations, and en-suite bathrooms. Enjoy the convenience of daily room servicing and unlimited Wi-Fi.
               </p>
             </div>
           </div>
@@ -159,7 +172,7 @@
           <img src="assets/Westville Images/Image4.jpg" alt="room" />
           <div class="room__card__details">
             <div>
-              <h4>Breakfast Included</h4>
+              <h4>Full English Breakfast</h4>
               <p>
                 Start your day with a full English breakfast served in our dining hall. Lunch and dinner are available on request, promising a delightful culinary experience.
               </p>
@@ -201,9 +214,9 @@
         </div>
         <div class="feature__card">
           <span><i class="ri-time-line"></i></span>
-          <h4>Conference Venue</h4>
+          <h4>Lush Gardens and Outdoor Spaces</h4>
           <p>
-            State-of-the-art facilities for conferences and business events, with a capacity exceeding 30 attendees.
+            Embrace nature in our lush green indigenous gardens, providing serene backdrops for garden weddings, outdoor events, and a peaceful atmosphere for guests to enjoy.
           </p>
         </div>
         <div class="feature__card">
@@ -223,14 +236,14 @@
         </div>
         <div class="feature__card">
           <span><i class="ri-wallet-line"></i></span>
-          <h4>Outdoor Garden</h4>
+          <h4>Warm and Genuine Hospitality</h4>
           <p>
-            A serene sanctuary garden providing a beautiful outdoor space for events and relaxation.
+            Experience the heart of Ulifa Lodge through the warm hospitality of our dedicated team. We pride ourselves on creating an atmosphere where guests feel welcomed, valued, and cared for.
           </p>
         </div>
         <div class="feature__card">
           <span><i class="ri-coupon-line"></i></span>
-          <h4>Private Swimming Pool</h4>
+          <h4>Our Large Swimming Pool</h4>
           <p>
             A refreshing pool for our guests to enjoy a leisurely swim and bask in the sunshine.
           </p>
@@ -488,5 +501,20 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="main.js"></script>
+
+    <script>
+      function toggleDescription() {
+      var description = document.getElementById("roomDescription");
+      var button = document.getElementById("toggleButton");
+
+      if (description.style.display === "none" || description.style.display === "") {
+        description.style.display = "block";
+        button.innerHTML = "Read Less:"
+      } else {
+        description.style.display = "none";
+        button.innerHTML = "Read More";
+      }
+    }
+  </script>
   </body>
 </html>
