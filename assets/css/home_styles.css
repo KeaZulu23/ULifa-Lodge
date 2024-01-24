@@ -303,7 +303,7 @@ nav {
 }
 
 .room__container {
-  padding-block: 5rem;
+  padding: 20px;
 }
 
 .room__container :is(.section__subheader, .section__header) {

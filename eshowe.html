@@ -27,6 +27,7 @@
   <link href="assets/css/eshowe_style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/home_styles.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
     .seperation {
@@ -72,7 +73,7 @@
         <div class="row">
           <div class="col-md-12 col-lg-8">
             <div class="title-single-box">
-              <h1 class="title-single">Ulifa Lodge & Wedding Venue - Eshowe </h1>
+              <h1 class="title-single">Ulifa Lodge & Wedding Venue</h1>
               <span class="color-text-a">Your Perfect Escape</span>
             </div>
           </div>
@@ -86,7 +87,7 @@
                   <a href="venue.html">Properties</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Ulifa Lodge and Wedding Venue
+                 Eshowe
                 </li>
               </ol>
             </nav>
@@ -102,48 +103,79 @@
           <div class="col-lg-8">
             <div id="property-single-carousel" class="swiper">
               <div class="swiper-wrapper">
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/Ulifa Logo - Eshowe.png" alt="">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/eshowe1.png" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/eshowe2.jpg" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/eshowe3.png" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/eshowe4.jpg" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/eshowe5.jpg" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/Spa Reception pic 3.jpg" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/Spa Reception pic 4.jpg" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/Spa Reception pic 5.jpg" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Spa 1.jpg" alt="" style="height: 550px;">
-                </div>
-                <div class="carousel-item-b swiper-slide" style="height: 550px;">
-                  <img src="assets/Spa 4.jpg" alt="">
-                </div>
-                <div class="carousel-item-b swiper-slide">
-                  <img src="assets/Eshowe Images/eshowe6.png" alt="" style="height: 550px;">
+                <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+                  <!-- Carousel wrapper -->
+                  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      <!-- Item 1 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Eshowe Images/eshowe1.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" style="height: 600px;">
+                      </div>
+                      <!-- Item 2 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                          <img src="assets/Eshowe Images/eshowe3.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <!-- Item 3 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Eshowe Images/eshowe4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <!-- Item 4 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Eshowe Images/eshowe5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <!-- Item 5 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Eshowe Images/eshowe6.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Westville Images/Image4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/Eshowe Images/Spa Reception pic 1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <!-- Item 5 -->
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/bedroom1.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Westville Images/Image7.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/Westville Images/Image8.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/Westville Images/Image9.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <!-- Item 5 -->
+                      <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Westville Images/Image10.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div>
+                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                          <img src="assets/Westville Images/Image11.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                      </div> -->
+                  </div>
+                  <div class="flex justify-center items-center pt-4">
+                      <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                          <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                              <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                              </svg>
+                              <span class="sr-only">Previous</span>
+                          </span>
+                      </button>
+                      <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                          <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                              <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              </svg>
+                              <span class="sr-only">Next</span>
+                          </span>
+                      </button>
+                  </div>
                 </div>
               </div>
+              <div class="property-single-carousel-pagination carousel-pagination"></div>
             </div>
-            <div class="property-single-carousel-pagination carousel-pagination"></div>
           </div>
-        </div>
-
         <div class="seperation"></div>
         <div class="row">
           <div class="col-sm-12">
@@ -171,7 +203,7 @@
                   <div class="summary-list">
                     <ul class="list">
                       <li class="d-flex justify-content-between">
-                        <strong>Capacity:</strong>
+                        <strong>Venue Capacity:</strong>
                         <span>150-250 guests</span>
                       </li>
                       <li class="d-flex justify-content-between">
@@ -213,10 +245,10 @@
                 </div>
                 <div class="property-description">
                   <p class="description color-text-a">
-                    Eshowe is a haven for nature enthusiasts, boasting a captivating landscape that showcases the best of KwaZulu Natal's biodiversity. Ulifa Lodge & Wedding Venue Eshowe is strategically situated to immerse guests in the tranquility of this natural paradise. The indigenous garden surrounding the lodge provides a serene setting, inviting guests to unwind amidst the beauty of native flora.
-                  </p>
+                    Eshowe is a haven for nature enthusiasts, boasting a captivating landscape that showcases the best of KwaZulu Natal's biodiversity. Ulifa Lodge & Wedding Venue is strategically situated to immerse guests in the tranquility of this natural paradise. The indigenous garden surrounding the lodge provides a serene setting, inviting guests to unwind amidst the beauty of native flora.
+                  </p><br>
                   <p class="description color-text-a no-margin">
-                    Nestled in the heart of KwaZulu Natal, Ulifa Lodge & Wedding Venue Eshowe offers a unique gateway to the charming town of Eshowe. Embraced by lush greenery and a vibrant community, Eshowe beckons visitors with its blend of natural beauty, historical significance, and cultural richness.
+                    Nestled in the heart of KwaZulu Natal, Ulifa Lodge & Wedding Venue offers a unique gateway to the charming town of Eshowe. Embraced by lush greenery and a vibrant community, Eshowe beckons visitors with its blend of natural beauty, historical significance, and cultural richness.
                   </p>
                 </div>
                 <div class="row section-t3">
@@ -228,15 +260,14 @@
                 </div>
                 <div class="amenities-list color-text-a">
                   <ul class="list-a no-margin">
-                    <li>Versatile Event Venue</li>
-                    <li>Strategic location for business and leisure</li>
-                    <li>Lush green indigenous garden for outdoor functions</li>
-                    <li>Fully air-conditioned rooms with smart TVs</li>
-                    <li>Spacious event venue with a capacity of 150 to 250 people</li>
-                    <li>Unlimited Wi-Fi access</li>
-                    <li>Secure Parking</li>
-                    <li>En-suite bathrooms</li>
-                    <li>24-hour CCTV cameras</li>
+                    <ul><iconify-icon icon="material-symbols-light:outdoor-garden-outline"></iconify-icon> Versatile Event Venue</ul>
+                    <ul><iconify-icon icon="carbon:location"></iconify-icon> Strategic location for business and leisure</ul>
+                    <ul><iconify-icon icon="lucide:leafy-green"></iconify-icon> Lush green indigenous garden for outdoor functions</ul>
+                    <ul><iconify-icon icon="lucide:tv"></iconify-icon> Fully air-conditioned rooms with smart TVs</ul>
+                    <ul><iconify-icon icon="streamline:city-hall"></iconify-icon> Spacious event venue with a capacity of 150 to 250 people</ul>
+                    <ul><iconify-icon icon="heroicons:wifi"></iconify-icon> Unlimited Wi-Fi access</ul>
+                    <ul><iconify-icon icon="tabler:parking"></iconify-icon> Secure Parking</ul>
+                    <ul><iconify-icon icon="bx:cctv"></iconify-icon> 24-hour CCTV cameras</ul>
                   </ul>
                 </div>
               </div>
@@ -256,7 +287,7 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
-                <iframe src="assets/img/eshowe video.mp4" width="100%" height="460" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen muted></iframe>
+                <video src="assets/Eshowe Images/Video Eshowe.mp4" width="100%" height="460" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen controls></video>
               </div>
               <div class="tab-pane fade" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab">
                 <img src="assets/img/plan2.jpg" alt="" class="img-fluid">
@@ -268,21 +299,18 @@
           </div>
           <div class="col-md-12">
             <div class="row section-t3">
-              <div class="col-sm-12">
-                <div class="title-box-d">
-                  <h3 class="title-d">Contact Agent</h3>
-                </div>
+              <div class="title-box-d">
+                <h3 class="title-d">Contact Us</h3>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 col-lg-4">
-                <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3251108/person-icon-md.png" alt="" class="img-fluid">
+                <img src="assets/Eshowe Images/eshowe3.png" alt="" class="img-fluid">
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="property-agent">
-                  <h4 class="title-agent">Manager A</h4>
                   <p class="color-text-a">
-                    Experience the convenience and charm of Ulifa Lodge & Wedding Venue Eshowe, where every amenity is thoughtfully curated for a memorable stay. We look forward to welcoming you for business or pleasure at our Eshowe location.
+                    Experience the convenience and charm of Ulifa Lodge & Wedding Venue, where every amenity is thoughtfully curated for a memorable stay. We look forward to welcoming you for business or pleasure at our Eshowe location.
                   </p>
                   <ul class="list-unstyled">
                     <li class="d-flex justify-content-between">
@@ -424,31 +452,36 @@
   </footer>End  Footer -->
   
 
-  <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4" style="background-color: #0f1a2c;">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="assets/Ulifa Logo.png">
-            </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="index.html" class="hover:underline me-4 md:me-6">Home</a>
-                </li>
-                <li>
-                    <a href="index.html#about" class="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                  <a href="venue.html" class="hover:underline me-4 md:me-6">Venues</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="hover:underline">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Ulifa</a>. All Rights Reserved.</span>
+  <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl text-center">
+        <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+          <img class="nav__logo" src="assets/Ulifa Logo.png" style="width: auto;"></img>
+        </a>
+        <p class="my-6 text-gray-500 dark:text-gray-400">Luxury, Sophistication, and Warm Hospitality.</p>
+        <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+            <li>
+                <a href="index.html" class="mr-4 hover:underline md:mr-6 ">Home</a>
+            </li>
+            <li>
+                <a href="index.html#about" class="mr-4 hover:underline md:mr-6">About</a>
+            </li>
+            <li>
+                <a href="venue.html" class="mr-4 hover:underline md:mr-6 ">Venues</a>
+            </li>
+            <li>
+                <a href="eshowe.html" class="mr-4 hover:underline md:mr-6">Eshowe</a>
+            </li>
+            <li>
+                <a href="westville.html" class="mr-4 hover:underline md:mr-6">Westville</a>
+            </li>
+            <li>
+                <a href="contact.html" class="mr-4 hover:underline md:mr-6">Contact</a>
+            </li>
+        </ul>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Ulifa</a>. All Rights Reserved.</span>
     </div>
   </footer>
+  
 
 
 
@@ -457,6 +490,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="https://unpkg.com/scrollreveal"></script>
