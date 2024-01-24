@@ -44,7 +44,7 @@
            <img class="ml-2 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg3.svg" alt="bg" style="height: 600px;"></img>
            
             <div class="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
-                <h1 style="font-family: Longhai Regular;" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">An Accommodation, Conference Functions and Wedding Venue.</h1>
+                <h1 style="font-family: system-ui;" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">An Accommodation, Conference Functions and Wedding Venue.</h1>
             </div>
         </div>
         <div class="container mx-auto flex justify-center md:-mt-56 -mt-20 sm:-mt-40">
@@ -138,7 +138,15 @@
               <h4>Our Luxurious Spacious Rooms</h4>
               <button onclick="toggleDescription2()" id="toggleButton2" style="padding: auto;">Read More:</button>
               <p id="roomDescription2" style="display: none;">
-                Our lodges are designed with an eye for luxury, featuring well-appointed rooms, modern amenities, and elegant decor that reflects the essence of comfort.</p>
+                Our lodges are designed with an eye for luxury, featuring well-appointed rooms, modern amenities, and elegant decor that reflects the essence of comfort. <br><br>
+                All rooms are fully Air-Conditioned with Smart TV’s, Complimentary Tea and Coffee, Hotel Quality Linen, a Work Station, Bathroom En-Suite, Daily Room Servicing with Unlimited Wi-Fi, Secure Parking with 24 hour-CCTV cameras.<br><br>
+                <button id="showCarouselBtn" class="btn btn-primary">Show Images</button> <br><br>
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <!-- Images will be added dynamically here -->
+                  </div>
+                </div>
+              </p>
             </div>
           </div>
         </div>
@@ -659,6 +667,42 @@
         button.innerHTML = "Read More";
       }
     }
-  </script>
+    </script>
+
+    <script>
+      document.getElementById('showCarouselBtn').addEventListener('click', function() {
+        // Show the carousel
+        document.getElementById('imageCarousel').style.display = 'block';
+
+        // Get the carousel inner container
+        var carouselInner = document.querySelector('#imageCarousel .carousel-inner');
+
+        // Array of image URLs
+        var imageUrls = [
+          'assets/Westville Images/Image5.jpg',
+          'assets/Westville Images/Room.jpg',
+          'assets/Westville Images/Family room.jpg',
+          'assets/Westville Images/Honeymoon room.jpg',
+          'assets/Westville Images/2 sleeper.jpg',
+          // Add more image URLs as needed
+        ];
+
+        // Clear existing carousel items
+        carouselInner.innerHTML = '';
+
+        // Add images to the carousel
+        imageUrls.forEach(function(url, index) {
+          var itemClass = index === 0 ? 'carousel-item active' : 'carousel-item';
+          carouselInner.innerHTML += `
+            <div class="${itemClass}">
+              <img src="${url}" class="d-block w-100" alt="Image ${index + 1}">
+            </div>
+          `;
+        });
+
+        // Initialize the carousel
+        $('.carousel').carousel();
+      });
+    </script>
   </body>
 </html>

@@ -8,7 +8,7 @@
   --extra-light: #f8fafc;
   --white: #ffffff;
   --max-width: 1200px;
-  --header-font: "Playfair Display", serif;
+  --header-font: "system-ui", serif;
 }
 
 * {
@@ -102,7 +102,7 @@ body {
 }
 
 body {
-  font-family: "Longhai Regular", sans-serif;
+  font-family: "system-ui", sans-serif;
 }
 
 nav {
