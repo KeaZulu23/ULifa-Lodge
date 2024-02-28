@@ -126,9 +126,9 @@ nav {
   background-color: var(--extra-light);
 }
 
-.nav__logo {
+/* .nav__logo {
   height: 50px;
-}
+} */
 
 .nav__menu__btn {
   font-size: 1.5rem;
